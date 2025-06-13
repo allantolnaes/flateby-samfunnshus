@@ -1,7 +1,7 @@
 import { BaseInfo } from "@/Data/data";
 import Image from "next/image";
 import React from "react";
-import { FaDAndD, FaDownload } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 
 const Hero = () => {
   return (
