@@ -11,7 +11,7 @@ const font = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Performer Portfolio",
+  title: "Allan Tolnæs website",
   description: "Performer portfolio with React",
 };
 
