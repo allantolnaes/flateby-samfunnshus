@@ -15,7 +15,6 @@ const Footer = () => {
             height={180}
           />
         </Link>
-        */
       </div>
       <p className="text-gray-900 mt-6 text-center">
         &copy; 2025 - All rights reserved - Allan Tolnæs
