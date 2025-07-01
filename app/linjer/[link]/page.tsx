@@ -7,7 +7,6 @@ import { MdSend } from "react-icons/md";
 export default async function LinjePage({ params }: { params: { link: string } }) {
   const { link } = params;
 
-  // Find the blog (linje) with matching link param
   const linje = blogs.find((item) => item.link === link);
 
   if (!linje) return notFound();
