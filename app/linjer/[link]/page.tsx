@@ -18,39 +18,23 @@ export default function LinjePage({
       <div className="flex flex-col justify-center w-4/5 mx-auto">
         {/* Title full width on top */}
         <h1
-          data-aos="fade-right"
-          data-aos-delay="100"
           className="text-bg text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] lg:leading-[4rem] xl:leading-[4.5rem] text-white mt-12 md:mt-0 py-12"
         >
           {linje.title}
         </h1>
 
-        {/* Two-column grid below */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-          {/* Content side */}
+          {/* Content */}
           <div>
-            <p
-              data-aos="fade-left"
-              data-aos-delay="200"
-              className="text-gray-900 text-lg mb-8"
-              style={{ maxWidth: 550 }}
-            >
+            <p className="text-gray-900 text-lg mb-8" style={{ maxWidth: 550 }}>
               {linje.summary}
             </p>
 
-            <p
-              data-aos="fade-left"
-              data-aos-delay="250"
-              className="text-2xl font-bold mb-8 text-gray-900"
-            >
+            <p className="text-2xl font-bold mb-8 text-gray-900">
               {linje.price}
             </p>
 
-            <div
-              data-aos="fade-left"
-              data-aos-delay="300"
-              className="flex space-x-6 mb-12"
-            >
+            <div className="flex space-x-6 mb-12">
               <a
                 href={linje.linkHel}
                 target="_blank"
@@ -69,23 +53,15 @@ export default function LinjePage({
               </a>
             </div>
 
-            {/* Søk nå button */}
-            <div data-aos="fade-left" data-aos-delay="350">
-              <CustomButton
-                href="https://www.folkehogskole.no/index.php?page_id=80&skole_id=92"
-                text="Søk nå"
-                icon={<MdSend />}
-              />
-            </div>
+            <CustomButton
+              href="https://www.folkehogskole.no/index.php?page_id=80&skole_id=92"
+              text="Søk nå"
+              icon={<MdSend />}
+            />
           </div>
 
-          {/* Image side */}
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="400"
-            className="mx-auto rounded-[3rem] border-[3.5px] border-[#618264] overflow-hidden"
-            style={{ maxWidth: 700 }}
-          >
+          {/* Image */}
+          <div className="mx-auto rounded-[3rem] border-[3.5px] border-[#618264] overflow-hidden" style={{ maxWidth: 700 }}>
             <Image
               src={linje.image}
               alt={linje.title}
