@@ -77,4 +77,23 @@ export default function LinjePage({ params }: { params: { link: string } }) {
             </div>
           </div>
 
-          {/* Image si*
+          {/* Image side */}
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            className="mx-auto rounded-[3rem] border-[3.5px] border-[#618264] overflow-hidden"
+            style={{ maxWidth: 700 }}
+          >
+            <Image
+              src={linje.image}
+              alt={linje.title}
+              width={700}
+              height={700}
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
