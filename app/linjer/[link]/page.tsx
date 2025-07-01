@@ -4,16 +4,12 @@ import Image from "next/image";
 import CustomButton from "@/components/Helper/CustomButton";
 import { MdSend } from "react-icons/md";
 
-type Props = {
-  params: {
-    link: string;
-  };
-};
-
-export default async function LinjePage({ params }: Props) {
-  const { link } = params;
-
-  const linje = blogs.find((item) => item.link === link);
+export default function LinjePage({
+  params,
+}: {
+  params: { link: string };
+}) {
+  const linje = blogs.find((item) => item.link === params.link);
 
   if (!linje) return notFound();
 
