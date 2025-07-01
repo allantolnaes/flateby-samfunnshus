@@ -4,7 +4,13 @@ import Image from "next/image";
 import CustomButton from "@/components/Helper/CustomButton";
 import { MdSend } from "react-icons/md";
 
-export default async function LinjePage({ params }: { params: { link: string } }) {
+type PageProps = {
+  params: {
+    link: string;
+  };
+};
+
+export default async function LinjePage({ params }: PageProps) {
   const { link } = params;
 
   const linje = blogs.find((item) => item.link === link);
