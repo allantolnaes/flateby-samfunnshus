@@ -1,5 +1,3 @@
-"use client";
-
 import { blogs } from "@/Data/data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -12,7 +10,7 @@ type Props = {
   };
 };
 
-export default function LinjePage({ params }: Props) {
+export default async function LinjePage({ params }: Props) {
   const { link } = params;
 
   const linje = blogs.find((item) => item.link === link);
