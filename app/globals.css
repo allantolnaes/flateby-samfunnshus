@@ -10,7 +10,7 @@
 
   .nav__link::after {
     content: "";
-    @apply block absolute h-[3px] w-full bg-[#c277fa] scale-x-0 transition duration-300 origin-right;
+    @apply block absolute h-[3px] w-full bg-[#f68537] scale-x-0 transition duration-300 origin-right;
   }
 
   .nav__link:hover::after {
@@ -18,10 +18,14 @@
   }
 
   .text-bg {
-    background-image: linear-gradient(to right, #44028f 0%, #c277fa 100%);
+    background-image: linear-gradient(to right, #e7650d 0%, #f68537 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .bg-basic {
+    background-color: #b0d9b1;
   }
 
   .custom-scrollbar ::-webkit-scrollbar {
@@ -30,11 +34,11 @@
   }
 
   .custom-scrollbar ::-webkit-scrollbar-track {
-    background: #44028f;
+    background: #b0d9b1;
   }
 
   .custom-scrollbar ::-webkit-scrollbar-thumb {
-    background: #c277fa;
+    background: #79ac78;
     border-radius: 4px;
   }
 }

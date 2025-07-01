@@ -16,18 +16,18 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
     <div>
       {/* Overlay */}
       <div
-        className={`fixed ${navOpen} transform transition-all duration-500 inset-0 x-[1000] bg-[#6FE6FC] opacity-70 w-full h-screen`}
+        className={`fixed ${navOpen} transform transition-all duration-500 inset-0 x-[1000] bg-[#79AC78] opacity-70 w-full h-screen`}
       ></div>
       {/* NavLinks */}
       <div
-        className={`text-white ${navOpen} transform transition-all duration-500 delay-300 fixed justify-center flex flex-col h-full w-[80%] sm:w-[60%] bg-[#6FE6FC] space-y-6 z-[10000]`}
+        className={`text-white ${navOpen} transform transition-all duration-500 delay-300 fixed justify-center flex flex-col h-full w-[80%] sm:w-[60%] bg-[#79AC78] space-y-6 z-[10000]`}
       >
         {navLinks.map((navlink) => {
           return (
             <Link key={navlink.id} href={navlink.url}>
               <p
                 onClick={closeNav}
-                className="nav__link text-[20px] ml-12 border-b-[1.5px] pb-2 border-[#FFFA8D] sm:text-[30px]"
+                className="nav__link text-[20px] ml-12 border-b-[1.5px] pb-2 border-[#000] sm:text-[30px]"
               >
                 {navlink.label}
               </p>

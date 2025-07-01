@@ -33,17 +33,17 @@ const Nav = ({ openNav }: Props) => {
   return (
     <div
       className={`fixed ${
-        navBg ? "bg-[#6FE6FC]" : "fixed"
+        navBg ? "bg-[#79AC78]" : "fixed"
       } h-[12vh] z-[10] w-full transition-all duration-200`}
     >
       <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
         <Link href={"#"}>
           <Image
-            src="/images/logo.png"
+            src="/images/stuf-logo.png"
             alt="Logo"
-            width={130}
-            height={115}
+            width={200}
+            height={200}
             className="ml-[1rem] sm:ml-0"
           />
         </Link>

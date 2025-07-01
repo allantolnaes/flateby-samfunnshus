@@ -33,13 +33,11 @@ const Slider = () => {
       infinite
       responsive={responsive}
     >
-      {clientReviews.map((review) => {
-        return (
-          <div key={review.image}>
-            <ReviewCard review={review} />
-          </div>
-        );
-      })}
+      {clientReviews.map((review) => (
+        <div key={review.image} className="h-full flex">
+          <ReviewCard review={review} />
+        </div>
+      ))}
     </Carousel>
   );
 };

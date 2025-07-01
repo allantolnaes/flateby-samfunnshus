@@ -4,8 +4,8 @@ import Slider from "./Slider";
 
 const Reviews = () => {
   return (
-    <div id="reviews" className="pt-16 pb-16 bg-[#4ED7F1] scroll-mt-28">
-      <SectionHeading>Sitater fra kolleger</SectionHeading>
+    <div id="reviews" className="pt-16 pb-16 bg-basic scroll-mt-28">
+      <SectionHeading>Sitater fra elever</SectionHeading>
       <div className="w-[90%] sm:w-[80%] mx-auto mt-20">
         <Slider></Slider>
       </div>

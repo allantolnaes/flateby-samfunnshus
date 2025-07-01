@@ -11,6 +11,7 @@ import Blog from "./Blog/Blog";
 import Contact from "./Contact/Contact";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import Kontakt from "./Contact/Kontakt";
 
 const Home = () => {
   useEffect(() => {
@@ -30,12 +31,9 @@ const Home = () => {
     <div className="overflow-hidden">
       <Hero />
       <About />
-      <Services />
-      <Project />
-      <Skills />
-      <Reviews />
       <Blog />
-      <Contact />
+      <Reviews />
+      <Kontakt />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import React from "react";
 
 const Project = () => {
   return (
-    <div id="my-projects" className="pt-16 pb-16 bg-[#4ED7F1] scroll-mt-20">
+    <div id="my-projects" className="pt-16 pb-16 bg-basic scroll-mt-20">
       <SectionHeading>Prosjekter</SectionHeading>
       <div className="w-[80%] mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center">
         {projectData.map((project) => {
