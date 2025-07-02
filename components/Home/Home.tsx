@@ -2,8 +2,6 @@
 
 import React, { useEffect } from "react";
 import Hero from "./Hero/Hero";
-import About from "./About/About";
-import Reviews from "./Reviews/Reviews";
 import Arrangementer from "./Arrangementer/Arrangementer";
 import AOS from "aos";
 import "aos/dist/aos.css";

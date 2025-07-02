@@ -19,15 +19,8 @@ type Props = {
 };
 
 const ArrangementCard = ({ arrangement }: Props) => {
-  const {
-    dato,
-    image,
-    title,
-    link,
-    typeArrangement,
-    description1,
-    description2,
-  } = arrangement;
+  const { dato, image, title, link, typeArrangement, description1 } =
+    arrangement;
 
   return (
     <Link href={`/arrangementer/${link}`} className="h-full block group">

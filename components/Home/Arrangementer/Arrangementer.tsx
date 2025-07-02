@@ -3,7 +3,7 @@ import React from "react";
 import ArrangementCard from "@/components/Home/Arrangementer/ArrangementCard";
 import { arrangementer } from "@/Data/data";
 import Link from "next/link";
-import { FaArrowLeft, FaArrowRight, FaCalendarAlt } from "react-icons/fa";
+import { FaCalendarAlt } from "react-icons/fa";
 
 const ArrangementerPage = () => {
   return (

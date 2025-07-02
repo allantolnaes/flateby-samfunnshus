@@ -6,10 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { utleieData } from "@/Data/utleieData";
 
-type Props = {
-  params: { slug: string };
-};
-
 type ParamsType = {
   slug: string;
 };
