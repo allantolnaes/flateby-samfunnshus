@@ -1,7 +1,5 @@
 "use client";
 
-import { servicesData } from "@/Data/data";
-import Image from "next/image";
 import React from "react";
 import Tilt from "react-parallax-tilt";
 
