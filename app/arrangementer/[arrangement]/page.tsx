@@ -1,15 +1,14 @@
+import { use } from "react";
 import { arrangementer } from "@/Data/data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
 type Props = {
-  params: {
-    arrangement: string; // ✅ use same name as folder
-  };
+  params: Promise<{ arrangement: string }>;
 };
 
 export default function ArrangementPage({ params }: Props) {
-  const { arrangement } = params;
+  const { arrangement } = use(params);
 
   const foundArrangement = arrangementer.find(
     (item) => item.link === arrangement
