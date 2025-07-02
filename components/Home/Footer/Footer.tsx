@@ -10,7 +10,7 @@ const Footer = () => {
         <Link href={"#"}>
           <Image
             className="mx-auto"
-            src="/images/stuf-logo.png"
+            src="/images/logo.png"
             alt="Logo"
             width={250}
             height={250}
@@ -21,7 +21,7 @@ const Footer = () => {
       {/* Social media icons */}
       <div className="flex justify-center space-x-8 mb-6">
         <a
-          href="https://www.facebook.com/stufskole/"
+          href="https://www.facebook.com"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"
@@ -30,31 +30,19 @@ const Footer = () => {
           <FaFacebookF />
         </a>
         <a
-          href="https://www.youtube.com/@stavangerurbanfolkehgskole3401/videos"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="YouTube"
-          className="text-2xl text-red-500 hover:text-red-600 transition-colors"
+          href="https://www.facebook.com"
+          className="text-gray-700 hover:underline hover:text-blue-500 transition-colors"
         >
-          <FaYoutube />
+          Følg oss gjerne på FaceBook
         </a>
         <a
-          href="https://www.instagram.com/stufskole/"
+          href="https://www.facebook.com"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Instagram"
-          className="text-2xl text-purple-400 hover:text-[#E4405F] transition-colors"
+          aria-label="Facebook"
+          className="text-2xl text-blue-700 hover:text-blue-500 transition-colors"
         >
-          <FaInstagram />
-        </a>
-        <a
-          href="https://www.tiktok.com/@stufskole"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="TikTok"
-          className="text-2xl text-gray-800 hover:text-purple-800 transition-colors"
-        >
-          <FaTiktok />
+          <FaFacebookF />
         </a>
       </div>
 

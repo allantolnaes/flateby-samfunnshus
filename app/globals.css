@@ -10,7 +10,7 @@
 
   .nav__link::after {
     content: "";
-    @apply block absolute h-[3px] w-full bg-[#f68537] scale-x-0 transition duration-300 origin-right;
+    @apply block absolute h-[3px] w-full bg-[#307532] scale-x-0 transition duration-300 origin-right;
   }
 
   .nav__link:hover::after {
@@ -18,14 +18,14 @@
   }
 
   .text-bg {
-    background-image: linear-gradient(to right, #e7650d 0%, #f68537 100%);
+    background-image: linear-gradient(to right, #307532 0%, #55e559 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .bg-basic {
-    background-color: #b0d9b1;
+    background-color: #ebebeb;
   }
 
   .custom-scrollbar ::-webkit-scrollbar {

@@ -6,13 +6,13 @@ export const navLinks = [
   },
   {
     id: 2,
-    url: "/#om-oss",
-    label: "Om oss",
+    url: "/arrangementer",
+    label: "Arrangementer",
   },
   {
     id: 3,
-    url: "/linjer",
-    label: "Linjer",
+    url: "/kalender",
+    label: "Kalender",
   },
   {
     id: 4,

@@ -11,8 +11,8 @@ const font = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "StUF Folkehøyskole",
-  description: "Folkehogskole website with React",
+  title: "Flateby Samfunnshus",
+  description: "Flatby Samfunnshus website with React",
 };
 
 export default function RootLayout({

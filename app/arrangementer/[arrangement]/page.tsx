@@ -1,32 +1,33 @@
-import { use } from "react";
-import { blogs } from "@/Data/data";
+import { arrangementer } from "@/Data/data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import CustomButton from "@/components/Helper/CustomButton";
 import { MdSend } from "react-icons/md";
 
 type Props = {
-  params: Promise<{
-    link: string;
-  }>;
+  params: {
+    arrangement: string; // Matches folder name [arrangement]
+  };
 };
 
-export default function LinjePage({ params }: Props) {
-  const { link } = use(params); // ✅ unwrap the async params object
+export default function ArrangementPage({ params }: Props) {
+  const { arrangement: arrangementLink } = params;
 
-  const linje = blogs.find((item) => item.link === link);
+  const arrangement = arrangementer.find(
+    (item) => item.link === arrangementLink
+  );
 
-  if (!linje) return notFound();
+  if (!arrangement) return notFound();
 
   return (
-    <div className="w-full pt-[4vh] md:pt-[12vh] min-h-screen bg-[#B0D9B1] overflow-hidden relative">
+    <div className="w-full pt-[4vh] md:pt-[12vh] min-h-screen bg-basic overflow-hidden relative">
       <div className="flex flex-col justify-center w-4/5 mx-auto">
         <h1
           data-aos="fade-right"
           data-aos-delay="100"
           className="text-bg text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] lg:leading-[4rem] xl:leading-[4.5rem] text-white mt-12 md:mt-0 py-12"
         >
-          {linje.title}
+          {arrangement.title}
         </h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
@@ -37,7 +38,7 @@ export default function LinjePage({ params }: Props) {
               className="text-gray-900 text-lg mb-8"
               style={{ maxWidth: 550 }}
             >
-              {linje.summary}
+              {arrangement.description}
             </p>
 
             <p
@@ -45,31 +46,14 @@ export default function LinjePage({ params }: Props) {
               data-aos-delay="250"
               className="text-2xl font-bold mb-8 text-gray-900"
             >
-              {linje.price}
+              {arrangement.dato}
             </p>
 
             <div
               data-aos="fade-left"
               data-aos-delay="300"
               className="flex space-x-6 mb-12"
-            >
-              <a
-                href={linje.linkHel}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-[#F68537] hover:bg-[#e7650d] rounded-xl font-semibold transition text-white"
-              >
-                Helårskurs
-              </a>
-              <a
-                href={linje.linkHalv}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-[#F68537] hover:bg-[#e7650d] rounded-xl font-semibold transition text-white"
-              >
-                Halvtårskurs
-              </a>
-            </div>
+            ></div>
 
             <div data-aos="fade-left" data-aos-delay="350">
               <CustomButton
@@ -87,8 +71,8 @@ export default function LinjePage({ params }: Props) {
             style={{ maxWidth: 700 }}
           >
             <Image
-              src={linje.image}
-              alt={linje.title}
+              src={arrangement.image}
+              alt={arrangement.title}
               width={700}
               height={700}
               className="object-cover"

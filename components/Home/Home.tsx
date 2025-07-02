@@ -4,9 +4,9 @@ import React, { useEffect } from "react";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Reviews from "./Reviews/Reviews";
-import Blog from "./Blog/Blog";
+import Arrangementer from "./Arrangementer/Arrangementer";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
 import Kontakt from "./Contact/Kontakt";
 
 const Home = () => {
@@ -26,8 +26,8 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       <Hero />
+      <Arrangementer />
       <About />
-      <Blog />
       <Reviews />
       <Kontakt />
     </div>

@@ -16,11 +16,11 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
     <div>
       {/* Overlay */}
       <div
-        className={`fixed ${navOpen} transform transition-all duration-500 inset-0 x-[1000] bg-[#79AC78] opacity-70 w-full h-screen`}
+        className={`fixed ${navOpen} transform transition-all duration-500 inset-0 x-[1000] bg-[#307532] opacity-70 w-full h-screen`}
       ></div>
       {/* NavLinks */}
       <div
-        className={`text-white ${navOpen} transform transition-all duration-500 delay-300 fixed justify-center flex flex-col h-full w-[80%] sm:w-[60%] bg-[#79AC78] space-y-6 z-[10000]`}
+        className={`text-white ${navOpen} transform transition-all duration-500 delay-300 fixed justify-center flex flex-col h-full w-[80%] sm:w-[60%] bg-[#307532] space-y-6 z-[10000]`}
       >
         {navLinks.map((navlink) => {
           return (
