@@ -2,8 +2,6 @@ import SectionHeading from "@/components/Helper/SectionHeading";
 import React from "react";
 import BlogCard from "@/components/Home/Blog/BlogCard";
 import { blogs } from "@/Data/data";
-import CustomButton from "@/components/Helper/CustomButton";
-import { MdSend } from "react-icons/md";
 import Link from "next/link";
 
 const Linjer = () => {

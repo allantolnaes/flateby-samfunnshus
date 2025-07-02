@@ -3,12 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useRouter } from "next/navigation"; // required for router.push
 
+// ✅ Define Props before using it
 type Props = {
   blog: {
     id: number;
     title: string;
-    link: string; // ← new property for dynamic page link
+    link: string;
     linkHel: string;
     linkHalv: string;
     summary: string;
@@ -18,6 +20,7 @@ type Props = {
 };
 
 const BlogCard = ({ blog }: Props) => {
+  const router = useRouter();
   const { price, image, title, linkHel, linkHalv, link } = blog;
 
   return (
@@ -41,22 +44,26 @@ const BlogCard = ({ blog }: Props) => {
             <h1 className="text-sm text-gray-300 font-bold">{price}</h1>
           </div>
 
-          {/* Buttons */}
+          {/* ✅ Replaced <a> with <button> */}
           <div className="flex justify-between mt-3 text-white z-10 relative">
-            <a
-              href={linkHel}
-              onClick={(e) => e.stopPropagation()}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                router.push(linkHel);
+              }}
               className="py-2 px-4 bg-[#F68537] hover:bg-[#e7650d] rounded-xl"
             >
               Helårskurs
-            </a>
-            <a
-              href={linkHalv}
-              onClick={(e) => e.stopPropagation()}
+            </button>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                router.push(linkHalv);
+              }}
               className="py-2 px-4 bg-[#F68537] hover:bg-[#e7650d] rounded-xl"
             >
               Halvtårskurs
-            </a>
+            </button>
           </div>
         </div>
       </div>

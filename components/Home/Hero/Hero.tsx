@@ -2,11 +2,7 @@ import { BaseInfo } from "@/Data/data";
 import CustomButton from "@/components/Helper/CustomButton";
 import Image from "next/image";
 import React from "react";
-<<<<<<< HEAD
 import { MdSend } from "react-icons/md";
-=======
-import { FaDownload } from "react-icons/fa";
->>>>>>> 77fa4c8b3934d7cb02e1383ebc3e7594902bc07c
 
 const Hero = () => {
   return (

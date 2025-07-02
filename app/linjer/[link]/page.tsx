@@ -1,5 +1,4 @@
-"use client";
-
+import { use } from "react";
 import { blogs } from "@/Data/data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -7,13 +6,13 @@ import CustomButton from "@/components/Helper/CustomButton";
 import { MdSend } from "react-icons/md";
 
 type Props = {
-  params: {
+  params: Promise<{
     link: string;
-  };
+  }>;
 };
 
 export default function LinjePage({ params }: Props) {
-  const { link } = params;
+  const { link } = use(params); // ✅ unwrap the async params object
 
   const linje = blogs.find((item) => item.link === link);
 
@@ -22,7 +21,6 @@ export default function LinjePage({ params }: Props) {
   return (
     <div className="w-full pt-[4vh] md:pt-[12vh] min-h-screen bg-[#B0D9B1] overflow-hidden relative">
       <div className="flex flex-col justify-center w-4/5 mx-auto">
-        {/* Title full width on top */}
         <h1
           data-aos="fade-right"
           data-aos-delay="100"
@@ -31,9 +29,7 @@ export default function LinjePage({ params }: Props) {
           {linje.title}
         </h1>
 
-        {/* Two-column grid below */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-          {/* Content side */}
           <div>
             <p
               data-aos="fade-left"
@@ -75,7 +71,6 @@ export default function LinjePage({ params }: Props) {
               </a>
             </div>
 
-            {/* Søk nå button */}
             <div data-aos="fade-left" data-aos-delay="350">
               <CustomButton
                 href="https://www.folkehogskole.no/index.php?page_id=80&skole_id=92"
@@ -85,7 +80,6 @@ export default function LinjePage({ params }: Props) {
             </div>
           </div>
 
-          {/* Image side */}
           <div
             data-aos="zoom-in"
             data-aos-delay="400"

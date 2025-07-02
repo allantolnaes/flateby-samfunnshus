@@ -11,12 +11,8 @@ type Props = {
 };
 
 const ReviewCard = ({ review }: Props) => {
-<<<<<<< HEAD
   const { image, name, profession, review: clientReview } = review;
 
-=======
-  const { name, profession, rating, review: clientReview } = review;
->>>>>>> 77fa4c8b3934d7cb02e1383ebc3e7594902bc07c
   return (
     <div className="relative rounded-xl overflow-hidden m-4 h-full flex flex-col text-white">
       {/* Background image */}

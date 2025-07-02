@@ -3,7 +3,6 @@ import React from "react";
 import BlogCard from "./BlogCard";
 import { blogs } from "@/Data/data";
 import Link from "next/link";
-import { MdArrowForward } from "react-icons/md";
 
 const Blog = () => {
   return (
