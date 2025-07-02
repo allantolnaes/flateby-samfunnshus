@@ -21,7 +21,7 @@ const Footer = () => {
       {/* Social media icons */}
       <div className="flex justify-center space-x-8 mb-6">
         <a
-          href="https://www.facebook.com"
+          href="https://facebook.com/FlatebySamfunnshus"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"
@@ -30,13 +30,13 @@ const Footer = () => {
           <FaFacebookF />
         </a>
         <a
-          href="https://www.facebook.com"
+          href="https://facebook.com/FlatebySamfunnshus"
           className="text-gray-700 hover:underline hover:text-blue-500 transition-colors"
         >
           Følg oss gjerne på FaceBook
         </a>
         <a
-          href="https://www.facebook.com"
+          href="https://facebook.com/FlatebySamfunnshus"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"
@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
 
       <p className="text-gray-700 mt-6 text-center">
-        &copy; 2025 - All rights reserved - StUF Folkehøyskole
+        &copy; 2025 - All rights reserved - Flateby Samfunnshus
       </p>
       <p className="text-gray-700 mt-3 text-center">Design by Allan Tolnæs</p>
     </div>

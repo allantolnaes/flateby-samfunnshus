@@ -88,7 +88,7 @@ export const arrangementer = [
 ];
 
 export const contactData = {
-  phone: "Stian Karlsen | +47 911 02 000",
+  phone: "+47 911 02 000",
   email: "utleie@flatebysamfunnshus.no",
   address: "Borgengrenda 1, 1911 Flateby",
 };

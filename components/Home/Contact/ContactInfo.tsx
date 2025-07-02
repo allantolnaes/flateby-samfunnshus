@@ -13,9 +13,7 @@ const ContactInfo = () => {
           <h1 className="text-lg sm:text-xl text-white font-bold">
             Telefonnummer
           </h1>
-          <h1 className="text-base sm:text-lg text-white">
-            {contactData.phone}
-          </h1>
+          <h1 className="text-sm sm:text-lg text-white">{contactData.phone}</h1>
         </div>
       </div>
       <div className="flex items-center space-x-8 mt-8 mb-8">
@@ -26,9 +24,7 @@ const ContactInfo = () => {
           <h1 className="text-lg sm:text-xl text-white font-bold">
             Email adresse
           </h1>
-          <h1 className="text-base sm:text-lg text-white">
-            {contactData.email}
-          </h1>
+          <h1 className="text-sm sm:text-lg text-white">{contactData.email}</h1>
         </div>
       </div>
       <div className="flex items-center space-x-8">
@@ -37,7 +33,7 @@ const ContactInfo = () => {
         </div>
         <div>
           <h1 className="text-lg sm:text-xl text-white font-bold">Adresse</h1>
-          <h1 className="text-base sm:text-lg text-white">
+          <h1 className="text-sm sm:text-lg text-white">
             {contactData.address}
           </h1>
         </div>
