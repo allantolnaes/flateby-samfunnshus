@@ -36,9 +36,7 @@ const ContactInfo = () => {
           <FaMap className="w-4 h-4 md:w-7 md:h-7 text-white" />
         </div>
         <div>
-          <h1 className="text-lg sm:text-xl text-white font-bold">
-            Adresse StUF Folkehøyskole
-          </h1>
+          <h1 className="text-lg sm:text-xl text-white font-bold">Adresse</h1>
           <h1 className="text-base sm:text-lg text-white">
             {contactData.address}
           </h1>

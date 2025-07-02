@@ -18,7 +18,7 @@ const Kontakt = () => {
           {/* Right side: Image */}
           <div className="md:display-block relative w-full h-76 md:h-[500px] rounded-3xl overflow-hidden shadow-lg">
             <Image
-              src="/images/kontakt.webp"
+              src="/images/homepagePic.jpg"
               alt="Kontakt oss"
               fill
               className="object-cover rounded-[3rem] border-[3.5px] border-[#618264]"

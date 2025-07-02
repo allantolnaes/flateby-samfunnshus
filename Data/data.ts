@@ -53,36 +53,42 @@ export const arrangementer = [
     id: 1,
     title: "QUIZ",
     link: "quiz",
-    status: "Utleid",
-    description:
+    typeArrangement: "Arrangement",
+    description1:
+      "Fast quiz på huset. Spørsmål om alt fra nærmiljø til nyheter.",
+    description2:
       "Fast quiz på huset. Spørsmål om alt fra nærmiljø til nyheter.",
     dato: "04/09.2025",
     image: "/images/quiz.jpg",
   },
   {
     id: 2,
-    title: "QUIZ",
-    link: "annet-arrangement",
-    status: "Utleid",
-    description:
-      "Fast quiz på huset. Spørsmål om alt fra nærmiljø til nyheter.",
+    title: "Konsert - Showtime trio ABBA show + Hits",
+    link: "showtime-trio-abba-show",
+    typeArrangement: "Konsert",
+    description1:
+      "Er du klar for en nostalgisk kveld fylt med udødelige hits og fantastisk stemning? Bli med på ABBA-Show + låter med klassikere fra 70-, 80-, og 90-tallet.",
+    description2:
+      "Bli med på festen, syng med til dine favorittsanger, og skap nye minner under discokulen! Kjøp billettene dine nå før de blir utsolgt, og bli en del av denne minneverdige feiringen av popmusikkens tidløse sjarm. Dette er en sjanse til å oppleve ABBA-magi på sitt beste. Vi ses på Flateby Samfunnshus!",
     dato: "04/09.2025",
-    image: "/images/quiz.jpg",
+    image: "/images/showtime-trio.jpg",
   },
   {
     id: 3,
-    title: "QUIZ",
-    link: "tredje-arrangement",
-    status: "Utleid",
-    description:
-      "Fast quiz på huset. Spørsmål om alt fra nærmiljø til nyheter.",
+    title: "Flateby-kinoen",
+    link: "kino",
+    typeArrangement: "Kino",
+    description1:
+      "Se de nyeste filmene på storskjerm. Baren serverer forfriskninger og snacks.",
+    description2:
+      "Se de flotteste filmene på storskjem mens du nyter forfriskninger fra kiosken. I storesalen drar vi ut amfiet slik at du skal få med deg det nyeste innen moderne kino! Ta med familie, venner, kolleger og beskjente. Kos dere!",
     dato: "04/09.2025",
-    image: "/images/quiz.jpg",
+    image: "/images/bygdekinoen.jpg",
   },
 ];
 
 export const contactData = {
-  phone: "+47 930 86 277",
-  email: "post@stufskole.no",
-  address: "Dues vei 9, 4009 Stavanger",
+  phone: "Stian Karlsen | +47 911 02 000",
+  email: "utleie@flatebysamfunnshus.no",
+  address: "Borgengrenda 1, 1911 Flateby",
 };

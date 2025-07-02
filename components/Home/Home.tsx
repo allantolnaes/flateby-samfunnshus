@@ -27,8 +27,6 @@ const Home = () => {
     <div className="overflow-hidden">
       <Hero />
       <Arrangementer />
-      <About />
-      <Reviews />
       <Kontakt />
     </div>
   );
