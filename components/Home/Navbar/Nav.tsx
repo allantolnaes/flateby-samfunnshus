@@ -38,7 +38,7 @@ const Nav = ({ openNav }: Props) => {
     >
       <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
-        <Link href={"#"}>
+        <Link href={"/"}>
           <Image
             src="/images/stuf-logo.png"
             alt="Logo"
